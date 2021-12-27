@@ -1,0 +1,168 @@
+h1, .h1{
+	line-height: 1;
+	font-size: 75px;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+	letter-spacing: -0.1rem;
+
+	@include maxDevice(1199px){
+		font-size: 60px;
+	}
+	@include maxDevice(767px){
+		font-size: 38px;
+	}
+}
+
+h2, .h2{
+	font-weight: 700;
+	font-size: 32px;
+
+	.btn{
+		font-size: inherit;
+		margin-right: 10px;
+		margin-left: 6px;
+		line-height: 1;
+	}
+
+	@include maxDevice(991px){
+		font-size: 27px;
+	}
+
+	@include maxDevice(767px){
+		font-size: 24px;
+	}
+}
+
+h3{
+	margin-bottom: 0.5em;
+	font-weight: 700;
+	font-size: 60px;
+
+	@include maxDevice(1199px){
+		font-size: 36px;
+	}
+}
+
+h4{
+	font-weight: 700;
+	font-size: 28px;
+}
+
+h5{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.25;
+	margin-bottom: 1em;
+}
+
+h6{
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+
+#wrapper{
+	padding-top: 175px;
+	position: relative;
+
+	@include maxDevice(991px){
+		padding-top: 125px;
+	}
+}
+main{
+	min-height: 65vh;
+}
+
+.content{
+	&-box{
+		background-color: $dark;
+		min-height: 600px;
+		padding-right: 9%;
+		padding-left: 9%;
+		color: $white;
+
+		@include maxDevice(575px){
+			margin-left: -16px;
+			margin-right: -16px;
+		}
+	}
+
+	&-card{
+		min-height: 100%;
+		padding: 25px 0 35px;
+		border-top: 1px solid $dark;
+		border-bottom: 1px solid $dark;
+	}
+}
+
+.our-funds{
+	position: relative;
+	padding: 95px 0 115px;
+	background-color: $white;
+
+	@include maxDevice(991px){
+		padding: 40px 0 60px;
+	}
+}
+
+.heading{
+	border-bottom: 1px solid $dark;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+address{
+	font-size: 16px;
+
+	h5{
+		margin-bottom: 8px;
+	}
+}
+
+.social{
+	a{
+		margin-right: 25px;
+	}
+	svg{
+		width: 32px;
+		height: 32px;
+	}
+}
+
+.form{
+	&-label{
+		font-size: 18px;
+
+		sup{
+			top: 0;
+			color: $red;
+			font-size: inherit;
+		}
+	}
+
+	&-control, &-select{
+		border-color: $dark;
+		border-radius: 0;
+		color: $dark;
+	}
+
+	&-select{
+		appearance: none !important;
+	}
+}
+
+input, select{
+	height: 48px;
+}
+
+.table{
+	background-color: $white;
+	white-space: nowrap;
+
+	th, td{
+		padding: 20px 15px;
+	}
+}

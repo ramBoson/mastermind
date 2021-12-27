@@ -1,0 +1,54 @@
+.footer{
+    background-color: $dark;
+    padding: 72px 0 50px;
+    font-size: 18px;
+    color: $white;
+
+    @include maxDevice(767px){
+        font-size: 15px;
+        padding: 42px 0 36px;
+    }
+
+    a{
+        color: inherit;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    &-logo{
+        letter-spacing: 0.27em;
+        font-size: 38px;
+
+        @include maxDevice(767px){
+            font-size: 30px;
+        }
+    }
+
+    ul{
+        @include maxDevice(575px){
+            @include justify-content(space-around !important)
+        }
+
+        a{
+            text-transform: uppercase;
+        }
+    }
+
+    li{
+        margin: 0 20px 15px;
+
+        @include maxDevice(575px){
+            margin: 0 0 10px;
+        }
+    }
+
+    p{
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 2px;
+
+        @include maxDevice(575px){
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+    }
+}
